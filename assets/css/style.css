@@ -1,7 +1,18 @@
+:root {
+  --past-bg: #DAD9DA;
+  --current: #F9786F;
+  --future: #8ADD88;
+
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+}
+
+textarea:active{
+  border: 1px solid blue;
 }
 
 textarea {
@@ -11,6 +22,7 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  background-color: var(--past-bg);
 }
 
 .jumbotron {
@@ -18,7 +30,7 @@ textarea {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 2px solid black;
 }
 
 .description {
@@ -65,7 +77,7 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
