@@ -1,5 +1,5 @@
 # Daily Agenda
-This is an agenda/workday scheduler written with HTML/CSS/JS. It allows you to save upcoming events and colors the table based on the current time and which events have passed/ are current/ or are upcoming. The events are saved in local storage and available to the user everytime they go to the site. I also used jQuery and moment.js for this project.
+This is an agenda/workday scheduler written with HTML/CSS/JS. I also used jQuery and moment.js libraries for this project.It allows you to save upcoming events and colors the table based on the current time and which events have passed/ are current/ or are upcoming. The events are saved in local storage and they are available to the user everytime they go return the site. 
 
 ## Live site
 https://techx-guy.github.io/Daily-Agenda/
