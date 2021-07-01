@@ -10,10 +10,11 @@ var savedEvent = JSON.parse(localStorage.getItem("savedEvent"));
 currentDayEl.text(currentDay);
 // on page load run init
 init();
-compareTime();
+
 
 // check for an array of saved event data, if there is not one, create one
 function init () {
+    compareTime();
     if (savedEvent == null){
         console.log("There is no event data in local storage, creating a blank array");
         savedEvent = [];
@@ -27,9 +28,6 @@ function init () {
 function compareTime (){
     // get current hour using moment.js
     var currentHour = moment().hour();
-    currentHour = 9;
-
-    console.log(currentHour);
     // loop through each time-block element
     $('.time-block').each(function(){
         // get value of this hour
@@ -54,7 +52,6 @@ function compareTime (){
 
 // get value from local storage and load them on page load
 function handleFillEvents (){
-    console.log(savedEvent);
     // loop through the savedEvent array
     for (let i = 0; i < savedEvent.length; i++) {
     var savedHour = savedEvent[i].time;
@@ -76,7 +73,6 @@ function handleSave (){
         event: value,
         };
         // push this to the array
-            console.log("pushing to array");
             savedEvent.push(currentEvent);
     // else textbox is blank, type something in the box please
 
