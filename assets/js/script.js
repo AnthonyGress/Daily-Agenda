@@ -4,8 +4,6 @@ var clearBtn = $('.clearBtn');
 var currentDayEl = $('#currentDay')
 var currentDay = moment().format('dddd, MMM Do');
 var savedEvent = JSON.parse(localStorage.getItem("savedEvent"));
-// var timeBlock = $('.time-block');
-
 // render current date to title
 currentDayEl.text(currentDay);
 // on page load run init
