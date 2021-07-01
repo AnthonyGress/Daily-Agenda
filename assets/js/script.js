@@ -32,7 +32,6 @@ function compareTime (){
        var hourRowVal = $(this).data('hour');
        // target the text area of this iteration
        var textArea = $(this).children('textarea');
-       console.log(hourRowVal); 
        // compare current hour from moment.js to the data-hour value of each row
        if (currentHour > hourRowVal){
            // hour has passed, no change to color of textarea
